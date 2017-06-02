@@ -1,0 +1,11 @@
+# Evita que se pueda acceder a los archivos de esta carpeta de forma externa.
+# Es una medida de seguridad que evita que cualquiera pueda ver los datos de la conexión.
+
+Deny from all
+
+# En caso de un error 403 (Acceso Denegado) redirecciona al usuario a /proyecto/403.html que es una página 403 personalizada
+
+ErrorDocument 403 /proyecto/403.html
+
+ 
+

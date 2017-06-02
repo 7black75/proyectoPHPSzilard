@@ -1,0 +1,350 @@
+/* Hoja de estilos de login.php */
+
+/* Importamos la fuente de texto 'Lato' */
+
+@font-face{
+	font-family: 'Lato';
+	src: url('../fuentes/Lato.ttf');
+}
+@font-face{
+	font-family: 'Lato-Light';
+	src: url('../fuentes/Lato-Light.ttf');
+}
+
+/* Fin importación de fuentes */
+
+*{
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	max-width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+			#login{
+				background-color: black;
+				background-image: url('../img/texture2.png');
+				color: #fff;
+                height: auto;
+				width: 25%;
+				text-align: center;
+				margin: 10% auto;
+				
+			}
+			section#contenedor{
+				width: 100%;
+				height: 100%;
+				min-width: 1355px;
+				background-color: #002040;
+				background-image: url('../img/texture.png');
+			}
+			#nombreUsuario{
+				width: 100%;
+				height: 30px;
+				background-color: #d8d8d8;
+				border: 1px solid #fff;
+				border-radius: 3px;
+			}
+			#formulario{
+					width: 600px;
+					height: auto;
+					margin: 0 auto;
+					color: white;
+					justify-content: center;
+					position: relative;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+				
+				#formulario input{
+					border: thin solid #e17d00;
+					text-align: center;
+					background-color: #222;
+					width: 60%;
+					position: relative;
+					left: 50%;
+					transform: translateX(-50%);
+					font-family: "Lato";
+					font-size: 15px;
+					font-variant: small-caps;
+					height: 60px;
+					color: #fff;
+					transition: background .3s ease-in-out; /**/
+				}
+				#errorLogin{
+					width: 400px;
+					height: auto;
+					margin: 0 auto;
+					position: absolute;
+					padding: 20px 20px 20px 20px;
+					bottom: 15px;
+					left: 50%;
+					transform: translateX(-50%);
+					
+				}
+				#eLTexto{
+					font-family: "Lato-Light";
+					padding: 0px 10px 10px 10px;
+					font-size: 23px;
+					text-align: center;
+					text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+					color: red;
+				}
+				#eLExplicacion{
+					font-family: "Lato-Light";
+					font-size: 18px !important;
+					text-align: center;
+					text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+					color: #e1e1e1 !important;
+				}
+				#logueado{
+					width: 500px;
+					height: auto;
+					margin: 0 auto;
+					position: relative;
+					padding: 20px 20px 20px 20px;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+				#logueado p{
+					font-family: "Lato-Light";
+					padding: 10px 10px 10px 10px;
+					font-size: 25px;
+					text-align: center;
+					text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+					color: red;
+				}
+				#explicacion{
+					font-family: "Lato-Light";
+					font-size: 20px !important;
+					text-align: center;
+					text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+					color: #e1e1e1 !important;
+				}
+				#botonVolver{
+					width: auto;
+					height: auto;
+					position: relative;
+					top: 5px;
+					left: 50%;
+					transform: translateX(-50%);
+					border: none !important;
+					outline: none !important;
+					background: none;
+				}
+				#botonVolver a{
+					text-decoration: none;
+					color: yellow;
+					font-family: "Lato-Light";
+					font-size: 15px;
+					text-align: center;
+				}
+				
+				#formulario input:hover{
+					background-color: #241811;
+					color: #fff;
+				}
+				
+				#formulario input:focus{
+					outline: 2px solid #e17d00;
+					background-color: #241811;
+					color: #fff;
+				}
+				#formulario textarea{
+					font-family: "Trebuchet MS";
+					font-size: 13px;
+					font-variant: small-caps;
+					width: 100%;
+					border: thin solid #e17d00;
+					padding: 7px 5px 7px 5px;
+					height: 100px;
+					background-color: #222;
+					color: #fff;
+					resize: none;
+					transition: background .3s ease-in-out; /**/
+				}
+				
+				#formulario textarea:hover{
+					background-color: #241811;
+					color: #fff;
+				}
+				#formulario textarea:focus{
+					outline: 2px solid #e17d00;
+					background-color: #241811;
+					color: #fff;
+				}
+			#contraUsuario{
+				    width: 100%;
+					height: 30px;
+					background-color: #d8d8d8;
+					border: 1px solid #fff;
+					border-radius: 3px;
+					font-family: sans-serif;
+					font-size: 11pt;
+			}
+			.leyenda{
+				color: orange;
+				font-family: 'Helvetica';
+				font-weight: bold;
+				background-color: black;
+				border: 1px solid #fff;
+			}
+			.normal{
+					border-top: 1px solid #fff;
+					border-bottom: 1px solid #fff;
+					width: 168px !important;
+				    font-weight: bold;
+					color: white;
+					font-size: 9.5pt;
+					font-family: sans-serif;
+					padding: 15px 15px 15px 15px;
+					display: inline-block;
+			}
+			#botonLogin{
+				width: 60% !important;
+				outline: none;
+				height: 60px;
+				background-color: #aa1515 !important;
+				color: white;
+				text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+				border: 1px solid #fff !important;
+				cursor: pointer;
+				transition: background .3s ease-in-out; /**/
+			}
+			#botonLogin:hover{
+				cursor: pointer;
+				background-color: #b50b0b !important;
+			}
+			#botonLogin:focus{
+				outline: none !important;
+			}
+			#bienvenido{
+				background-color: black;
+				color: #fff;
+				margin: 0 auto;
+				width: 25%;
+				text-align: center;
+			}
+			#titulo{
+				font-family: "Lato-Light";
+				font-size: 25px;
+				font-weight: lighter;
+				padding: 25px 25px 25px 25px;
+				text-align: center;
+			}
+			a{
+				text-decoration: none;
+				color: green;
+			}
+			#cajaError{
+				background-color: black;
+				color: #fff;
+				width: 25%;
+				text-align: center;
+                position: absolute;
+                bottom: 25px;
+                left: 36.5%;
+			}
+			.leyendaError{
+				color: red;
+				font-weight: bold;
+				background-color: black;
+				border: 1px solid #fff;
+			}
+			.error{
+				color: red;
+				font-weight: bold;
+			}
+	
+			#redirRegister{
+				outline: none !important;
+				border: none;
+				background: none;
+				font-family: "Lato";
+				font-size: 18px;
+				font-variant: small-caps;
+				text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+				position: relative;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			#redirRegister a{
+				color: #fff !important;
+				text-decoration: none;
+			}
+			#redirRegister:hover{
+				cursor: pointer;
+			}
+			#valido p{
+						font-family: "Trebuchet MS";
+						padding-top: 20px;
+						font-variant: small-caps;
+						font-size: 16px;
+					}
+			#valido{
+						visibility: hidden;
+						position: fixed;
+						top: 0;
+						opacity: 0.5;
+						left: 35%;
+						margin-top: 60px;
+						width: 30%;
+						height: 90px;
+						background-color: #07232B;
+						text-align: center;
+						border-radius: 2px;
+						padding: 16px;
+						border: thin solid green;
+						color: #fff;
+						z-index: 9;
+						-webkit-animation: fadein 2s, fadeout 4s 2s;
+						animation: fadein 2s, fadeout 4s 2s;
+					}
+					@-webkit-keyframes fadein {
+						from {top: 30px; opacity: 0; visibility: hidden;} 
+						to {top: 0; opacity: 1; visibility: visible;}
+					}
+
+					@keyframes fadein {
+						from {top: 30px; opacity: 0; visibility: hidden;}
+						to {top: 0; opacity: 1; visibility: visible;}
+					}
+
+					@-webkit-keyframes fadeout {
+						from {top: 0; opacity: 1; visibility: visible;} 
+						to {top: 30px; opacity: 0; visibility: hidden;}
+					}
+
+					@keyframes fadeout {
+						from {top: 0; opacity: 1; visibility: visible;}
+						to {top: 30px; opacity: 0; visibility: hidden;}
+					}
+
+									::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+				  font-family: "Lato";
+				  font-size: 16px !important;
+				  font-variant: small-caps;
+				  color: #a4a4a4;
+				}
+				::-moz-placeholder { /* Firefox 19+ */
+				  font-family: "Lato";
+				  font-size: 16px !important;
+				  font-variant: small-caps;
+				  color: #a4a4a4;
+				}
+				:-ms-input-placeholder { /* IE 10+ */
+				  font-family: "Lato";
+				  font-size: 16px !important;
+				  font-variant: small-caps;
+				  color: #a4a4a4;
+				}
+				:-moz-placeholder { /* Firefox 18- */
+				  font-family: "Lato";
+				  font-size: 16px !important; 
+				  font-variant: small-caps;
+				  color: #a4a4a4;
+				}

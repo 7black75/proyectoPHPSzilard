@@ -1,0 +1,12 @@
+{
+  "host": "mysql.hostinger.es",
+  "hostUser": "u577326124_black",
+  "hostPasswd": "lot000122",
+  "hostDb": "u577326124_prodb",
+  "indexInclude": "include/Index",
+  "autorInclude": "include/Autor",
+  "tiendaInclude": "include/Tienda",
+  "contactaInclude": "include/Contacta",
+  "userPanelInclude": "include/UserPanel",
+  "carritoInclude": "include/Carrito"
+}

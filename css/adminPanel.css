@@ -1,0 +1,527 @@
+/* Hoja de estilos de adminPanel.php */
+
+/* Importamos la fuente de texto 'Lato' */
+
+@font-face{
+	font-family: 'Lato';
+	src: url('../fuentes/Lato.ttf');
+}
+@font-face{
+	font-family: 'Lato-Light';
+	src: url('../fuentes/Lato-Light.ttf');
+}
+
+/* Fin importación de fuentes */
+
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    max-width: 100%;
+	overflow-x: hidden;
+    background-color: #111;
+}
+
+header{
+    width: 100%;
+    max-width: 1920px;
+    overflow:hidden;
+    height: 100px;
+    text-align: center;
+    border-bottom: 7px solid #e17d00;
+}
+
+section#contenedor{
+    width: 100%;
+    height: auto;
+    background-color: #050505;
+	margin-top: 46px;
+}
+
+#botonesAdmin{
+	width: 100%;
+	height: auto;
+	background-color: #002040;
+	background-image: url('../img/texture.png');
+	display: flex;
+	justify-content: center;
+	padding: 25px 25px 25px 25px;
+}
+
+.navegRapida{
+	border-bottom: 1.5px solid #050505 !important;
+}
+.ulNR{
+	background-image: url('../img/texture4.png') !important;
+}
+
+	.informacionUno{
+		width: 100%;
+		background-image: url('../img/texture5.png');
+		height: 200px;
+		border-bottom: 1px solid #050505;
+		display: flex;
+		justify-content: center;
+	}
+	.informacionUno img{
+		margin-top: 25px;
+	}
+	.informacionUno h3{
+		color: #fff;
+		font-family: "Trebuchet MS";
+		font-size: 14px;
+		font-variant: small-caps;
+		font-weight: lighter;
+		margin-left: 20px;
+		margin-top: 90px;
+	}
+
+    footer{
+    min-height: 86px;
+    background-color: #0E0E10;
+    display: flex;
+    flex-grow: 1;
+    padding-bottom: 30px;
+}
+
+footer p {
+    font-family: "Trebuchet MS";
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    font-weight: 100;
+    line-height: 34px;
+    padding-top: 40px;
+    margin-left: 75px;
+    color: #fff;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+	background-color: #333;
+	
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #111;
+    outline: 1px solid slategrey;
+	transition: background .3s ease-in-out;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #000;
+}
+
+.link{
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.link:first-child{
+    background: url('../img/wikipedia.png');
+    background-position: center;
+}
+.link:last-child{
+    background: url('../img/web.png');
+}
+.link:hover{
+    opacity: 0.65;
+}
+
+#divAux{
+    align-self: flex-end;
+    position: relative;
+    left: 55%;
+}
+
+/* Secciones */
+
+section#usuarios, section#libros, section#pedidos{
+    width: 100%;
+    height: auto;
+}
+#userTable, #bookTable, #pedidosTable{
+    width: 100%;
+    height: auto;
+    background: url('../img/texture1.png');
+}
+#userModify, #bookManage, #confirmarPedidos{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #050505;
+    border-bottom: 1px solid #050505;
+    background-color: #002040;
+    background-image: url('../img/texture.png');
+}
+
+	#tablaUsuarios, #tablaLibros, #tablaPedidos{
+		top: 25px;
+		color: #fff;
+		position: relative;
+		width: 95%;
+		background-color: #050505;
+		margin: 0 auto;
+		box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.75);
+		}
+		.columnas{
+		padding: 25px 25px 25px 25px;
+		font-weight: lighter;
+		background-color: orange !important;
+		background-image: url('../img/texture.png');
+		color: #000 !important;
+		font-size: 17px;
+		border: 0;
+		font-family: 'Helvetica' !important;
+		letter-spacing: -0.5px;
+		transition: background .3s ease-in-out; /**/
+	}
+
+	.columnas:hover{
+		opacity: 1 !important;
+	}
+	td{
+		padding: 25px 25px 25px 25px;
+		text-align: center;
+		border: 1px solid #fff;
+		background-color: #241811;
+		font-family: "Trebuchet MS";
+		font-size: 15px;
+		font-variant: small-caps;
+		border: 0;
+		
+	}
+	td:hover{
+		background-image: url('../img/texture.png');
+	}
+
+    #formTabla{
+					width: 98%;
+					height: auto;
+                    position: relative;
+                    top: 25px;
+                    margin: 0 auto;
+                    padding-bottom: 30px;
+				}
+
+				.tablaInput{
+					width: 95%;
+					height: 40px;
+					background-color: #222;
+					color: white;
+					font-family: "Trebuchet MS";
+					font-variant: small-caps;
+					font-size: 15px;
+					text-align: center;
+					border: 1px solid #050505;
+					transition: background .3s ease-in-out; /**/
+				}
+				.tablaInput:focus{
+					outline: white solid 1.5px !important;
+				}
+
+				#botonModify{
+					position: relative;
+						width: 100%;
+						height: 60px;
+						color: #fff;
+						margin-top: 20px;
+						margin-bottom: 25px;
+						background-color: green;
+						border: 1px solid #050505;
+						box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.75);
+						transition: background .3s ease-in-out;
+				}
+				#botonModify:hover{
+					cursor: pointer;
+					background-color: #00b000;
+				}
+                #userForm, #bookForm, #pedidosForm{
+                    width: 100%;
+                    height: auto;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+				#pedidosForm{
+					margin-bottom: 25px !important;
+				}
+                #botonBorrar{
+					position: relative;
+						width: 95%;
+						height: 60px;
+						color: #fff;
+						margin-top: 50px;
+						margin-bottom: 5px;
+						background-color: #930000;
+						border: 1px solid #050505;
+						box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.75);
+						transition: background .3s ease-in-out;
+				}
+				#botonBorrar:hover{
+					cursor: pointer;
+					background-color: #c80000;
+				}
+                	#addTabla{
+					color: #fff;
+					width: 100%;
+					background-color: #050505;
+					box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.75);
+				}
+
+                #valido{
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	opacity: 0.5;
+	left: 35%;
+	margin-top: 60px;
+	z-index: 9;
+	width: 30%;
+	height: 65px;
+	background-color: #07232B;
+	text-align: center;
+	border-radius: 2px;
+	padding: 16px;
+	border: thin solid green;
+	color: #fff;
+	-webkit-animation: fadein 2s, fadeout 4s 2s;
+	animation: fadein 2s, fadeout 4s 2s;
+}
+#valido p{
+	font-family: "Trebuchet MS";
+	padding-top: 20px;
+	font-variant: small-caps;
+	font-size: 16px;
+}
+
+@-webkit-keyframes fadein {
+	from {top: 30px; opacity: 0; visibility: hidden;} 
+	to {top: 0; opacity: 1; visibility: visible;}
+}
+
+@keyframes fadein {
+	from {top: 30px; opacity: 0; visibility: hidden;}
+	to {top: 0; opacity: 1; visibility: visible;}
+}
+
+@-webkit-keyframes fadeout {
+	from {top: 0; opacity: 1; visibility: visible;} 
+	to {top: 30px; opacity: 0; visibility: hidden;}
+}
+
+@keyframes fadeout {
+	from {top: 0; opacity: 1; visibility: visible;}
+	to {top: 30px; opacity: 0; visibility: hidden;}
+}
+
+.checkBorrar{
+    background-color: #930000;
+}
+	/* Estilos del placeholder */
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		font-family: "Trebuchet MS";
+		font-size: 15px !important;
+		font-variant: small-caps;
+		color: #e1e1e1;
+		text-align: center;
+	}
+
+	::-moz-placeholder { /* Firefox 19+ */
+		font-family: "Trebuchet MS";
+		font-size: 15px !important;
+		font-variant: small-caps;
+		color: #e1e1e1;
+		text-align: center;
+	}
+
+	:-ms-input-placeholder { /* IE 10+ */
+		font-family: "Trebuchet MS";
+		font-size: 15px !important;
+		font-variant: small-caps;
+		color: #e1e1e1;
+		text-align: center;
+	}
+	
+	:-moz-placeholder { /* Firefox 18- */
+		font-family: "Trebuchet MS";
+		text-align: center;
+		font-size: 15px !important; 
+		font-variant: small-caps;
+		color: #e1e1e1;
+	}
+
+/* Esconder flechas para el campo numérico de teléfono */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0; 
+}
+
+#naveg{
+	position: fixed;
+        width: 100%;
+        height: 46px;
+        top: 0;
+        -webkit-box-shadow: 0px 4px 19px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 4px 19px -2px rgba(0,0,0,0.75);
+        box-shadow: 0px 4px 19px -2px rgba(0,0,0,0.75);
+        z-index: 8;
+        min-width: 1224px;
+}
+
+#naveg ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    float: left;
+    text-align: center;
+    
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+}
+
+
+li a:hover {
+    background-color: #111;
+}
+
+
+.tipoPanel{
+	width: 300px;
+	height: 300px;
+	padding: 10px 10px 10px 10px;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-image: url('../img/texture.png');
+	box-shadow: 0px 0px 20px 1px #222;
+	
+}
+.tipoPanel:first-of-type{
+	background-color: #006030;
+}
+.tipoPanel:nth-child(2){
+	margin-left: 25px;
+	margin-right: 25px;
+	background-color: #bb9100;
+}
+.tipoPanel:last-of-type{
+	background-color: #930000;
+}
+#adminPanelUsers, #adminPanelBooks, #adminPanelPedidos{
+	width: auto;
+	height: 25px;
+	margin-top: 20px;
+	padding: 25px 25px 25px 25px;
+	background-color: #001020;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	text-decoration: none;
+	color: white;
+	font-family: "Lato";
+	font-size: 17px;
+	font-variant:small-caps;
+	text-shadow: 1px 1px 1px #000;
+	transition: background .3s ease-in-out;
+}
+
+#adminPanelUsers:hover, #adminPanelBooks:hover, #adminPanelPedidos:hover{
+	background-color: #111;
+}
+
+.parrafoTP{
+	font-family: "Lato";
+	font-size: 17px;
+	font-variant: small-caps;
+	color: white;
+	text-align: justify;
+	padding: 30px 30px 30px 30px;
+	text-shadow: 1px 1px 1px #000;
+}
+#login{
+	width: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	position: absolute;
+	background-color: #111;
+	right: 0;
+	top: 0;
+	height: 47px;
+	text-align: center;
+	border-left: 1px solid #e17d00;
+}
+#login img{
+	position: relative;
+	top: 13px;
+}
+#login a{
+	position: relative;
+	top: 11px;
+	color: #fff;
+	text-decoration: none;
+	font-family: "Trebuchet MS";
+	font-variant: small-caps;
+	font-size: 13px;
+}
+#userPanel{
+	width: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	position: absolute;
+	background-color: #111;
+	left: 0;
+	top: 0;
+	height: 47px;
+	text-align: center;
+	border-right: 1px solid #e17d00;
+}
+#userPanel img{
+	position: relative;
+	top: 13px;
+}
+#userPanel a{
+	position: relative;
+	top: 11px;
+	color: #fff;
+	text-decoration: none;
+	font-family: "Trebuchet MS";
+	font-variant: small-caps;
+	font-size: 13px;
+}
+#admin{
+	color: red;
+	font-family: "Trebuchet MS";
+	font-variant: small-caps;
+}
+#user{
+    color: yellow;
+	font-family: "Trebuchet MS";
+	font-variant: small-caps;
+}

@@ -1,0 +1,385 @@
+/* Hoja de estilos de autor.php */
+
+				.active {
+					background-color: #e17d00;
+					font-weight: bold;
+					color: #000;
+				}
+				.active:hover{
+					background-color: white;
+				}
+				section#autor{
+					width: 100%;
+					min-width: 1355px;
+					height: auto;
+					background-color: #1E1E1E;
+					display: flex;
+					flex-wrap: wrap;
+				}
+				
+				
+				hr {
+					margin: 0 auto;
+					width: 100%;
+					border-top:2px dotted red;
+				}
+				
+				#imagenAutor{
+					position: relative;
+					z-index: 2;
+					width: 300px;
+					height: 400px;
+					min-width: 300px;
+					min-height: 400px;
+					border: 1px solid #fff;
+					margin-top: 25px;
+					float: left;
+					box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.75);
+				}
+
+				#imagenAutor:hover{
+					-webkit-transition: all 1s ease-in-out;
+					-moz-transition: all 1s ease-in-out;
+					-o-transition: all 1s ease-in-out;
+					transition: all 1s ease-in-out;
+					transition:0.5s;
+					transform:scale(1.1);
+				}
+				#imagenAutorUno{
+					position: relative;
+					z-index: 2;
+					width: 300px;
+					min-width: 300px;
+					min-height: 400px;
+					height: 400px;
+					border: 1px solid #fff;
+					margin-top: 25px;
+					margin-right: 25px;
+					float: left;
+					box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.75);
+				}
+				#imagenAutorUno:hover{
+					-webkit-transition: all 1s ease-in-out;
+					-moz-transition: all 1s ease-in-out;
+					-o-transition: all 1s ease-in-out;
+					transition: all 1s ease-in-out;
+					transition:0.5s;
+					transform:scale(1.1);
+				}
+				#parrafoAutor{
+					color: #fff;
+					font-family: "Trebuchet MS";
+					font-size: 13.5px;
+					text-align: justify;
+					font-variant: small-caps;
+					padding: 25px 25px 25px 25px;
+					line-height: 20.5px;
+				}
+				#cajaTexto{
+					width: 100%;
+					height: 100%;
+					max-width: 700px;
+					overflow: hidden;
+				}
+				#tablaLibros{
+					top: 25px;
+					color: #fff;
+					position: relative;
+					width: 95%;
+					background-color: #050505;
+					box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.75);
+					
+				}
+				#formTabla{
+					width: 95%;
+					height: auto;
+				}
+
+				.tablaInput{
+					width: 95%;
+					height: 40px;
+					background-color: #222;
+					color: white;
+					font-family: "Trebuchet MS";
+					font-variant: small-caps;
+					font-size: 15px;
+					text-align: center;
+					border: 1px solid #050505;
+					transition: background .3s ease-in-out; /**/
+				}
+				.tablaInput:focus{
+					outline: white solid 1.5px !important;
+				}
+
+				#botonAdd{
+					position: relative;
+						width: 100%;
+						height: 60px;
+						color: #fff;
+						margin-top: 20px;
+						margin-bottom: 25px;
+						background-color: green;
+						border: 1px solid #050505;
+						box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.75);
+						transition: background .3s ease-in-out;
+				}
+				#botonAdd:hover{
+					cursor: pointer;
+					background-color: #00b000;
+				}
+
+				#addTabla{
+					color: #fff;
+					width: 100%;
+					background-color: #050505;
+					box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.75);
+				}
+				#tablaLibrosUser{
+					top: 25px;
+					color: #fff;
+					position: relative;
+					width: 95%;
+					margin-bottom: 50px;
+					background-color: #050505;
+					box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.75);
+					
+				}
+				td{
+					padding: 25px 25px 25px 25px;
+					text-align: center;
+					border: 1px solid #fff;
+					background-color: #241811;
+					font-family: "Trebuchet MS";
+					font-size: 15px;
+					font-variant: small-caps;
+					border: 0;
+				}
+				
+				td:hover{
+					background-image: url('../img/texture.png');
+				}
+				.columnas{
+					padding: 25px 25px 25px 25px;
+					font-weight: lighter;
+					background-color: orange !important;
+					background-image: url('../img/texture.png');
+					color: #000 !important;
+					font-size: 17px;
+					border: 0;
+					font-family: 'Helvetica' !important;
+					letter-spacing: -0.5px;
+				}
+				.columnas:hover{
+					opacity: 1 !important;
+				}
+				#bio{
+					width: 100%;
+					height: 460px;
+					background-color: #241811;
+					display: flex;
+					flex-grow: 0;
+					justify-content: center;
+					background-image: url('../img/texture2.png');
+					border-bottom: 1px solid #050505;
+				}
+				#artiTabla{
+					width: 100%;
+					height: auto;
+					display: flex;
+					flex-wrap: wrap;
+					flex-shrink: 1;
+					justify-content: center;
+					background-color: #003B3D;
+					background-image: url('../img/texture.png');
+					
+				}
+					
+					.eliminar{
+						background-color: #8d0000;
+					}
+					#botonEliminar{
+						position: relative;
+						width: 95%;
+						height: 60px;
+						color: #fff;
+						margin-top: 50px;
+						margin-bottom: 25px;
+						background-color: #540000;
+						border: 1px solid #050505;
+						box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.75);
+						transition: background .3s ease-in-out;
+					}
+					#botonEliminar:hover{
+						background-color: #222;
+						cursor: pointer;
+					}
+					#cuadroError{
+						width: 95%;
+						margin-left: 0.715%;
+						height: 100px;
+						margin-bottom: 25px;
+						text-align: center;
+						color: red;
+						background-color: #050505;
+						border: 1px solid red;
+					}
+					#cuadroError p{
+						position: relative;
+						top: 40%;
+						font-family: "Trebuchet MS";
+						font-size: 15px;
+						font-variant: small-caps;
+					}
+					#cuadroExito{
+						width: 95%;
+						margin-left: 0.715%;
+						margin-bottom: 25px;
+						height: 100px;
+						text-align: center;
+						color: green;
+						background-color: #050505;
+						border: 1px solid green;
+					}
+					#cuadroExito p{
+						position: relative;
+						top: 40%;
+						font-family: "Trebuchet MS";
+						font-size: 15px;
+						font-variant: small-caps;
+					}
+
+					::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+				  font-family: "Trebuchet MS";
+				  font-size: 15px !important;
+				  font-variant: small-caps;
+				  color: #e1e1e1;
+				  text-align: center;
+				}
+				::-moz-placeholder { /* Firefox 19+ */
+				  font-family: "Trebuchet MS";
+				  font-size: 15px !important;
+				  font-variant: small-caps;
+				  color: #e1e1e1;
+				  text-align: center;
+				}
+				:-ms-input-placeholder { /* IE 10+ */
+				  font-family: "Trebuchet MS";
+				  font-size: 15px !important;
+				  font-variant: small-caps;
+				  color: #e1e1e1;
+				  text-align: center;
+				}
+				:-moz-placeholder { /* Firefox 18- */
+				  font-family: "Trebuchet MS";
+				  font-size: 15px !important; 
+				  font-variant: small-caps;
+				  color: #e1e1e1;
+				  text-align: center;
+				}
+
+				/* Esconder flechas para el campo numérico de teléfono */
+				input[type=number]::-webkit-inner-spin-button, 
+				input[type=number]::-webkit-outer-spin-button { 
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					margin: 0; 
+				}
+
+				/* Slideshow */
+
+				#slider{
+					width: 100%;
+					height: 400px;
+					background-image: url('../img/texture1.png');
+				}
+
+/* Slideshow cartas */
+
+.slides{width:100%;
+height: 100%;
+}
+.slidesjs-control{
+	width: 100%;
+	height: 100% !important;
+}
+.slidesjs-container{
+	width: 100%;
+	height: 91% !important;
+	z-index: 5;
+}
+.divSlide img{
+	width: 280px;
+	height: 330px;
+	position: relative;
+	top: 10px;
+	border: 1px solid #fff;
+}	
+.divSlide{
+	background-color: #002040;
+	background-image: url('../img/texture.png');
+	width: 100%;
+	height: 100%;
+	display:flex !important;
+	justify-content: center;
+}
+.slidesjs-pagination{
+	background:#333;
+	list-style:none;
+	overflow:hidden;	
+}
+.slidesjs-pagination li{
+	display: none;
+}
+.slidesjs-pagination li a{
+	display:none;
+
+	color:#fff;
+	text-decoration:none;
+	background-color: #212121;
+	border-right: solid 1px #fff;
+}
+.slidesjs-pagination li a:hover{
+	background:#000;
+}
+.slides.active{
+	background:#000;
+}
+.slidesjs-navigation{
+	position: relative;
+	height: auto;
+	justify-content: center;
+	width: 30.33%;
+	height: 38px;
+	background:#000;
+	color:#fff;
+	text-decoration:none;
+	display:inline-flex;
+	padding:10px 20px;
+	font-family: "Trebuchet MS";
+	font-size: 15px;
+	font-variant: small-caps;
+	transition: background .3s ease-in-out;
+}
+.slidesjs-play{
+	background-color: green;
+}
+.slidesjs-play:hover{
+	background-color: #006000 !important;
+}
+.slidesjs-navigation:nth-child(3){
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+}
+.slidesjs-navigation:last-of-type{
+	background-color: #b00000;
+}
+.slidesjs-navigation:last-of-type:hover{
+	background-color: orangered;
+}
+.slidesjs-navigation:hover{
+	background-color: #333;
+	cursor: pointer;
+}
+
+
+/* Fin estilos slideshow */		

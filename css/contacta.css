@@ -1,0 +1,203 @@
+/* Hoja de estilos de contacta.php */
+
+				.active {
+				background-color: #e17d00;
+				font-weight: bold;
+				color: #000;
+				
+			}
+			
+				.active:hover{
+					background-color: white;
+				}
+
+				section#contactar{
+					width: 100%;
+					height: auto;
+					background-color: #002030;
+					display: flex;
+					flex-grow: 1;
+					flex-shrink: 1;
+					justify-content: center;
+					background-image: url('../img/texture.png');
+					border-bottom: 1px solid #050505;
+					flex-wrap: wrap;
+				}
+
+				td{
+					padding: 25px 25px 25px 25px;
+					text-align: center;
+					border: 1px solid #fff;
+					background-color: #241811;
+					font-family: "Trebuchet MS";
+					font-size: 15px;
+					font-variant: small-caps;
+					border: 0;
+					transition: background .3s ease-in-out; /**/
+				}
+				
+				td:hover{
+					background-image: url('../img/texture.png');
+				}
+
+				#formulario{
+					width: 600px;
+					height: auto;
+					background-color: #222;
+					box-shadow: 0px -1px 20px 3px #222;
+					color: white;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					padding: 0;
+					margin-top: 120px;
+					margin-bottom: 120px;
+				}
+				
+				#formulario input{
+					border: thin solid #e17d00;
+					background-color: #222;
+					margin-bottom: 5px;
+					padding: 10px 7px 10px 7px;
+					width: 50%;
+					flex-grow: 1;
+					font-family: "Trebuchet MS";
+					font-size: 13px;
+					font-variant: small-caps;
+					height: 40px;
+					color: #fff;
+					transition: background .3s ease-in-out; /**/
+				}
+				
+				#formulario input:hover{
+					background-color: #241811;
+					color: #fff;
+				}
+				
+				#formulario input:focus{
+					outline: 2px solid #e17d00;
+					background-color: #241811;
+					color: #fff;
+				}
+				#formulario textarea{
+					font-family: "Trebuchet MS";
+					font-size: 13px;
+					font-variant: small-caps;
+					width: 100%;
+					border: thin solid #e17d00;
+					padding: 7px 5px 7px 5px;
+					height: 100px;
+					margin-bottom: 5px;
+					background-color: #222;
+					color: #fff;
+					resize: none;
+					transition: background .3s ease-in-out; /**/
+				}
+				
+				#formulario textarea:hover{
+					background-color: #241811;
+					color: #fff;
+				}
+				#formulario textarea:focus{
+					outline: 2px solid #e17d00;
+					background-color: #241811;
+					color: #fff;
+				}
+				#subButton{
+					height: 50px !important;
+					margin: 0 !important;
+					width: 100%;
+					background-color: #050505 !important;
+					color: #fff !important;
+					transition: background .3s ease-in-out; /**/
+				}
+				#subButton:hover{
+					cursor: pointer; 
+					background-color: #111 !important;
+				}
+				section#info{
+					width:100%;
+					height: 160px;
+					background-color: #003B3D;
+					text-align: center;
+					background-image: url('../img/texture5.png');
+					border-bottom: 1px solid #050505;
+				}
+				section#info img{
+					margin-top: 12.5px;
+					border-radius: 50%;
+					border: thin solid #1e1e1e;
+					box-shadow: 0px 0px 1px 0.1px #222;
+				}
+				section#info span{
+					color: white;
+					font-family: "Trebuchet MS";
+					font-size: 15px;
+					font-variant: small-caps;
+					position: relative;
+					padding: 10px 10px 10px 10px;
+					bottom: 55px;
+				}
+				::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+				  font-family: "Trebuchet MS";
+				  font-size: 15px !important;
+				  font-variant: small-caps;
+				  color: #e1e1e1;
+				  
+				}
+				::-moz-placeholder { /* Firefox 19+ */
+				  font-family: "Trebuchet MS";
+				  font-size: 15px !important;
+				  font-variant: small-caps;
+				  color: #e1e1e1;
+				}
+				:-ms-input-placeholder { /* IE 10+ */
+				  font-family: "Trebuchet MS";
+				  font-size: 15px !important;
+				  font-variant: small-caps;
+				  color: #e1e1e1;
+				}
+				:-moz-placeholder { /* Firefox 18- */
+				  font-family: "Trebuchet MS";
+				  font-size: 15px !important; 
+				  font-variant: small-caps;
+				  color: #e1e1e1;
+				}
+
+				section#mostrarAdmin{
+					width: 100%;
+					height: auto;
+					background-color: #222;
+					background-image: url('../img/texture1.png');
+					display: flex;
+					justify-content: center;
+					border-bottom: 1px solid #050505;
+					border-top: 1px solid #050505;
+				}
+
+				#tablaAdminMostrar{
+					top: 25px;
+					color: #fff;
+					position: relative;
+					margin-bottom: 50px;
+					width: 95%;
+					background-color: #050505;
+					box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.75);
+				}
+
+				.columnas{
+					padding: 25px 25px 25px 25px;
+					font-weight: lighter;
+					background-color: orange !important;
+					background-image: url('../img/texture.png');
+					color: #000 !important;
+					font-size: 17px;
+					border: 0;
+					font-family: 'Helvetica' !important;
+					letter-spacing: -0.5px;
+					transition: background .3s ease-in-out; /**/
+					
+				}
+				.columnas:hover{
+					opacity: 1 !important;
+				}

@@ -1,0 +1,54 @@
+/* Hoja de estilos de aPUsuarios.php */
+
+html, body{
+     background-color: #006030;
+}
+
+#userTable{
+    width: 100%;
+    height: auto;
+}
+
+section#usuarios{
+    width: 100%;
+    height: auto;
+}
+
+#userForm{
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#tablaUsuarios{
+    color: #fff;
+    position: relative;
+    width: 95%;
+    background-color: #050505;
+    margin: 0 auto;
+    box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.75);
+}
+
+.checkBorrar{
+    background-color: #930000;
+}
+
+#botonBorrar{
+    position: relative;
+        width: 95%;
+        height: 60px;
+        color: #fff;
+        margin-top: 50px;
+        margin-bottom: 5px;
+        background-color: #930000;
+        border: 1px solid #050505;
+        box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.75);
+        transition: background .3s ease-in-out;
+}
+#botonBorrar:hover{
+    cursor: pointer;
+    background-color: #c80000;
+}

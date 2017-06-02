@@ -1,0 +1,12 @@
+{
+  "host": "localhost",
+  "hostUser": "root",
+  "hostPasswd": "",
+  "hostDb": "proyectodb",
+  "indexInclude": "include/Index",
+  "autorInclude": "include/Autor",
+  "tiendaInclude": "include/Tienda",
+  "contactaInclude": "include/Contacta",
+  "userPanelInclude": "include/UserPanel",
+  "carritoInclude": "include/Carrito"
+}

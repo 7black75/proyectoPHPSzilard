@@ -1,0 +1,269 @@
+
+	.active{
+		background-color: #e17d00 !important;
+		box-shadow: none !important;
+	}
+	.active #userPanelA{
+		color: #000;
+		font-weight: bold;
+	}
+	.active:hover{
+		background-color: white !important;
+	}
+
+	section#usuario{
+		width: 100%;
+		height: auto;
+		background-color: #1E1E1E;
+		background-image: url('../img/texture1.png');
+		display: flex;
+		justify-content: center;
+	}
+	
+	#userPanel{
+			width: auto;
+			padding-left: 25px;
+			padding-right: 25px;
+			position: absolute;
+			background-color: #111;
+			left: 0;
+			top: 0;
+			height: 47px;
+			text-align: center;
+			border-right: 1px solid #e17d00;
+	}
+	#userPanel img{
+		position: relative;
+		top: 13px;
+	}
+	#userPanel a{
+		position: relative;
+		top: 11px;
+		color: #fff;
+		text-decoration: none;
+		font-family: "Trebuchet MS";
+		font-variant: small-caps;
+		font-size: 13px;
+	}
+	#userPanel:hover #userPanelA{
+		color: #000 !important;
+	}
+		
+	section#info{
+		width:100%;
+		height: auto;
+		background-color: #003B3D;
+		background-image: url('../img/texture2.png');
+		border-bottom: 1px solid #050505;
+		text-align: center;
+	}
+
+	#tablaUsuarios{
+		top: 25px;
+		color: #fff;
+		position: relative;
+		width: 95%;
+		background-color: #050505;
+		margin: 0 auto;
+		box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.75);
+		}
+		.columnas{
+		padding: 25px 25px 25px 25px;
+		font-weight: lighter;
+		background-color: orange !important;
+		background-image: url('../img/texture.png');
+		color: #000 !important;
+		font-size: 17px;
+		border: 0;
+		font-family: 'Helvetica' !important;
+		letter-spacing: -0.5px;
+		transition: background .3s ease-in-out; /**/
+	}
+
+	.columnas:hover{
+		opacity: 1 !important;
+	}
+	td{
+		padding: 25px 25px 25px 25px;
+		text-align: center;
+		border: 1px solid #fff;
+		background-color: #241811;
+		font-family: "Trebuchet MS";
+		font-size: 15px;
+		font-variant: small-caps;
+		border: 0;
+		
+	}
+	td:hover{
+		background-image: url('../img/texture.png');
+	}
+	.modif{
+		width: 150px;
+		height: 240px;
+		padding: 20px 20px 20px 20px;
+		background-color: #050505;
+		background-image: url('../img/texture2.png');
+		border: 1px solid #050505;
+		margin-left: 20px;
+		margin-top: 85px;
+		margin-bottom: 85px;
+		-webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+		border-bottom: 5px solid #004e9b;
+		border-top: 5px solid #004e9b;
+		transition: border .3s ease-in-out; /**/
+	}
+	.modif:hover{
+		border-bottom: 5px solid #002f5e;
+		border-top: 5px solid #002f5e;
+	}
+	.modif input{
+		width: 140px;
+		margin: 0 auto;
+		height: 20px;
+		padding: 5px 5px 5px 5px;
+		margin-bottom: 10px;
+		color: #e1e1e1;
+		background-color: #181818;
+		border: 1px solid #004e9b;
+		text-align: center;
+		transition: background .3s ease-in-out; /**/
+	}
+	.modif input:hover{
+		background-color: #232323;
+	}
+	.modif input:focus{
+		outline: none !important;
+		border: orange solid 1px !important;
+		background-color: #241811;
+	}
+	.modif img{
+		-webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+		outline: white solid 1.5px !important;
+		
+	}
+	section#informacion img{
+		-webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+	}
+	.inputButtons{
+		width: 152px !important;
+		height: 30px !important;
+		font-family: "Trebuchet MS";
+		font-size: 13px;
+		font-variant: small-caps;
+		background-color: #004e9b !important;
+		color: white;
+		border: 1px solid white !important;
+		transition: background .3s ease-in-out; /**/
+	}
+	.inputButtons:hover{
+		background-color: #002f5e !important;
+		cursor: pointer;
+	}
+	section#informacion{
+		width: 100%;
+		background-image: url('../img/texture5.png');
+		height: 200px;
+		border-bottom: 1px solid #050505;
+		display: flex;
+		justify-content: center;
+	}
+	#informacion img{
+		margin-top: 25px;
+	}
+	#informacion h3{
+		color: #fff;
+		font-family: "Trebuchet MS";
+		font-size: 14px;
+		font-variant: small-caps;
+		font-weight: lighter;
+		margin-left: 20px;
+		margin-top: 90px;
+	}
+
+	section#pedidos{
+		width:100%;
+		height: auto;
+		background-color: #002030;
+		background-image: url('../img/texture.png');
+		border-bottom: 1px solid #050505;
+		text-align: center;
+	}
+	#tablaPedidos{
+		top: 25px;
+		color: #fff;
+		position: relative;
+		width: 95%;
+		background-color: #050505;
+		margin: 0 auto;
+		margin-bottom: 45px;
+		box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.75);
+	}
+
+		section#infoPedidos{
+		width: 100%;
+		border-top: 1px solid #050505;
+		background-image: url('../img/texture5.png');
+		height: 200px;
+		border-bottom: 1px solid #050505;
+		display: flex;
+		justify-content: center;
+	}
+	#infoPedidos img{
+		margin-top: 25px;
+	}
+	#infoPedidos h3{
+		color: #fff;
+		font-family: "Trebuchet MS";
+		font-size: 14px;
+		font-variant: small-caps;
+		font-weight: lighter;
+		margin-left: 20px;
+		margin-top: 90px;
+	}
+
+	/* Estilos del placeholder */
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		font-family: "Trebuchet MS";
+		font-size: 15px !important;
+		font-variant: small-caps;
+		color: #e1e1e1;
+		text-align: center;
+	}
+
+	::-moz-placeholder { /* Firefox 19+ */
+		font-family: "Trebuchet MS";
+		font-size: 15px !important;
+		font-variant: small-caps;
+		color: #e1e1e1;
+		text-align: center;
+	}
+
+	:-ms-input-placeholder { /* IE 10+ */
+		font-family: "Trebuchet MS";
+		font-size: 15px !important;
+		font-variant: small-caps;
+		color: #e1e1e1;
+		text-align: center;
+	}
+	
+	:-moz-placeholder { /* Firefox 18- */
+		font-family: "Trebuchet MS";
+		text-align: center;
+		font-size: 15px !important; 
+		font-variant: small-caps;
+		color: #e1e1e1;
+	}
+
+/* Esconder flechas para el campo numérico de teléfono */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0; 
+}

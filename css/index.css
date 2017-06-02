@@ -1,0 +1,211 @@
+/* Hoja de estilos de index.php */
+
+				
+/* Active no forma parte del css común por ciertas modificaciones en algunas páginas como userPanel.php */
+.active {
+	background-color: #e17d00;
+	font-weight: bold;
+	color: #000;
+}
+
+.active:hover{
+	background-color: white;
+}
+
+section#libros{
+width: 100%;
+height: 800px;
+background-color: #000;
+background-image: url('../img/texture2.png');
+border-bottom: 1px solid #050505;
+display: flex;
+flex-grow: 1;
+flex-shrink: 1;
+justify-content: center;
+
+}
+.libro{
+margin-top: 2%;
+margin-left: 2%;
+width: 400px;
+height: 90%;
+color: #fff;
+border-bottom: 5px solid red;
+background-color: #241811;
+border-top: 5px solid red;
+-webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+}
+
+
+
+.libro:hover{
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+transition:0.5s;
+transform:scale(1.1);
+}
+
+
+
+#imgLibroUno, #imgLibroDos, #imgLibroTres{
+width: 300px;
+height: 350px;
+border: 1px solid #000;
+margin: 0 auto;
+margin-top: 20px;
+background-color: #ecac4a;
+-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+
+#imgLibroUno{
+background: url('../img/en1.png');
+background-size: 100% 100%;
+}
+
+#imgLibroDos{
+background: url('../img/en2.png');
+background-size: 100% 100%;
+}
+
+#imgLibroTres{
+background: url('../img/en3.png');
+background-size: 100% 100%;
+}
+
+.parrafoLibro{
+padding: 15px 20px 15px 20px;
+font-family: "Trebuchet MS";
+font-size: 13px;
+letter-spacing: 1px;
+font-variant: small-caps;
+line-height: 16px;
+text-align: justify;
+}
+
+.nombreLibro{
+padding: 15px 20px 15px 20px;
+font-family: "Trebuchet MS";
+font-size: 16px;
+text-align: center;
+font-variant: small-caps;
+line-height: 15px;
+font-weight: bold;
+}
+hr {
+margin: 0 auto;
+width: 100%;
+border-top:2px dotted red;
+}
+
+section#suscribete{
+width: 100%;
+height: 300px;
+background-color: #e17d00;
+background-image: url('../img/texture.png');
+}
+form {
+width: 350px;
+margin: 0 auto;
+padding-top: 60px;
+}
+
+.description {
+	font-family: "Trebuchet MS";
+	font-size: 16px;
+	font-variant: small-caps;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.input {
+	display: flex;
+	align-items: center;
+}
+
+.button {
+	height: 44px;
+	border: none;
+}
+
+#email {
+	width: 75%;
+	background: #FDFCFB;
+	font-family: "Trebuchet MS";
+	color: #737373;
+	letter-spacing: 1px;
+	text-indent: 5%;
+	border-radius: 5px 0 0 5px;
+}
+
+.header {
+	font-family: "Trebuchet MS";
+	font-size: 35px;
+	text-align: center;
+}
+
+
+#submit {
+	width: 30%;
+	height: 44px;
+	background-color: #111;;
+	font-family: "Trebuchet MS";
+	font-weight: bold;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	transition: background .3s ease-in-out;
+}
+	
+
+#submit:hover {
+	background: #222;
+}
+#submit:focus{
+	outline: none !important;
+}
+	
+input:focus {
+	outline: 2px solid #111;
+	box-shadow: 0 0 2px #111;
+}
+
+section#secciones{
+	width: 100%;
+	height: 300px;
+	background-image: url('../img/texture1.png');
+	background-color: #241811;
+	display: flex;
+	justify-content: center;
+}
+.elemento{
+	width: 300px;
+	text-align: center;
+	height: auto;
+	padding: 20px 20px 20px 20px;
+	margin-left: 25px;
+	flex-basis: 20%;
+}
+.elemento p{
+	text-align: justify;
+	color: #fff;
+	width: auto;
+	font-family: "Trebuchet MS";
+	font-size: 15px;
+	font-variant: small-caps;
+	padding: 20px 20px 20px 20px;
+}
+.elemento img:hover{
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+	transition:0.5s;
+	transform:scale(1.2,1.2)
+}

@@ -1,0 +1,10 @@
+# Evita que se pueda acceder a los archivos de esta carpeta de forma externa.
+
+Deny from all
+
+# En caso de un error 403 (Acceso Denegado) redirecciona al usuario a /proyecto/403.html que es una página 403 personalizada
+
+ErrorDocument 403 /proyecto/403.html
+
+ 
+

@@ -1,0 +1,84 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('../img/error.png');
+    background-size: 100%;
+    overflow-x: hidden;
+}
+
+#cuadroError{
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+    height: auto;
+    background-color: #001a33;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    border: 2px solid #050505;
+}
+
+#unError{
+    font-family: "Trebuchet MS";
+    font-variant: small-caps;
+    font-size: 16px;
+    color: red;
+}
+#codError{
+    font-family: "Helvetica" !important;
+    font-variant: normal;
+    font-size: 17px !important;
+    color: yellow !important;
+}
+#explicacion{
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    font-variant:small-caps;
+}
+#adminErr{
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    height: auto;
+    background-color: #001a33;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #050505;
+    
+}
+
+#adminErr p{
+    font-family: "Trebuchet MS";
+    font-size: 17px;
+    font-variant: small-caps;
+    color: orange;
+}
+
+#botonVolver{
+    width: 300px;
+    height: auto;
+    padding: 25px 25px 25px 25px;
+    background-color: #001a33;
+    color: white;
+    border-left: 1px solid #050505;
+    border-top: 1px solid #050505;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: "Trebuchet MS";
+    font-variant: small-caps;
+    font-size: 15px;
+    transition: background .3s ease-in-out; /**/
+}
+
+a{
+    text-decoration: none;
+}
+
+#botonVolver:hover{
+    background-color: #00376f;
+    cursor: pointer;
+}
